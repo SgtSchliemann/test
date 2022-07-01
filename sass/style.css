@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 2rem;
+  font-family: "Aleo", "Georgia", serif;
+}
+
+h1 {
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 8rem;
+  line-height: 9.6rem;
+  color: #FFFFFF;
+}
+
+h2 {
+  font-family: "Red Hat Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 4rem;
+  line-height: 5.3rem;
+  color: #F2785C;
+  display: flex;
+  justify-content: center;
+}
+
+h3 {
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: 4.2rem;
+  margin-bottom: 24px;
+  color: #0D606F;
+}
+
+.button {
+  font-family: "Red Hat Text";
+  padding: 10px 32px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  color: #FFFFFF;
+  background: #0D606F;
+  border-radius: 10px;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+
+.header__button {
+  padding: 10px 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+}
+
+.button > svg {
+  margin-right: 10px;
+}
+
+.background_image {
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.header {
+  background: rgba(242, 120, 92, 0.7);
+  box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
+}
+
+.header__wrapper {
+  padding: 25px 0 24px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.img_header {
+  height: 765px;
+  background-image: url("/img/header_background.png");
+}
+
+.navigation {
+  display: flex;
+  font-family: "Red Hat Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+.navigation__link {
+  list-style: none;
+  padding: 0 21px;
+  cursor: pointer;
+}
+
+.stories {
+  background-color: rgba(255, 255, 255, 0.7);
+  height: 1270px;
+  color: #0D606F;
+}
+
+.stories__wrapper {
+  padding: 40px 0 41px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.story {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.story__photo {
+  box-shadow: 0px 4px 4px #0D606F;
+  border-radius: 16px;
+  margin: 0 40px 30px 0;
+}
+
+.footer {
+  height: 61px;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 0 13.35px 0;
+  align-items: center;
+}
+
+.footer_text {
+  color: #FFFFFF;
+}
+
+.img_footer {
+  height: 1331px;
+  background-image: url("/img/footer_background.png");
+}/*# sourceMappingURL=style.css.map */
