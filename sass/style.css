@@ -92,7 +92,7 @@ h3 {
 
 .img_header {
   height: 765px;
-  background-image: url("img/header_background.png");
+  background-image: url("../img/header_background.png");
 }
 
 .navigation {
@@ -153,5 +153,5 @@ h3 {
 
 .img_footer {
   height: 1331px;
-  background-image: url("img/footer_background.png");
+  background-image: url("../img/footer_background.png");
 }/*# sourceMappingURL=style.css.map */
