@@ -92,7 +92,7 @@ h3 {
 
 .img_header {
   height: 765px;
-  background-image: url("/img/header_background.png");
+  background-image: url("img/header_background.png");
 }
 
 .navigation {
