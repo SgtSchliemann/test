@@ -1,0 +1,46 @@
+.preview {
+    color: $color-light;
+}
+
+.preview__wrapper {
+    margin: 32px 0 0 146px;
+    height: 422px;
+    width: 892px;
+}
+
+.preview__wrapper > p {
+    color: $color-light;
+    font-style: italic;
+    margin: 32px 0 46px 0;
+}
+
+.preview__input {
+    background-color: $color-search-background;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    padding: 18px
+}
+
+.input {
+    color: $color-primary;
+    font-family: 'Aleo';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+    display: block;
+    border: none;
+    background-color: transparent;
+    flex-grow: 1;
+}
+
+.input::placeholder {
+    font-family: 'Aleo';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+
+    color: $color-primary;
+}
