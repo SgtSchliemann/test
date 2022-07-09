@@ -111,19 +111,19 @@ h3 {
 }
 
 .ico-bike {
-  background-image: url(src/img/icons/steps_bike.svg);
+  background-image: url(../../img/icons/steps_bike.svg);
   width: 50px;
   height: 45px;
 }
 
 .ico-calendar {
-  background-image: url(src/img/icons/steps_calendar.svg);
+  background-image: url(../../img/icons/steps_calendar.svg);
   width: 52px;
   height: 52px;
 }
 
 .ico-plane {
-  background-image: url(src/img/icons/steps_plane.svg);
+  background-image: url(../../img/icons/steps_plane.svg);
   width: 60px;
   height: 45px;
 }
@@ -156,7 +156,7 @@ h3 {
 
 .img_header {
   height: 765px;
-  background-image: url("src/img/backgrounds/header_background.png");
+  background-image: url("../../img/backgrounds/header_background.png");
 }
 
 .navigation {
@@ -261,14 +261,14 @@ h3 {
   width: 800px;
   border-radius: 16px;
   margin-left: 60px;
-  background-image: url("src/img/destinations/destinations_japan.png");
+  background-image: url("../../img/destinations/destinations_japan.png");
 }
 .destinations_photo:first-child {
   margin-left: 0;
-  background-image: url("src/img/destinations/destinations_spain.png");
+  background-image: url("../../img/destinations/destinations_spain.png");
 }
 .destinations_photo:last-child {
-  background-image: url("src/img/destinations/destinations_usa.png");
+  background-image: url("../../img/destinations/destinations_usa.png");
 }
 .destinations_text {
   font-family: "Red Hat Text";
@@ -354,7 +354,7 @@ h3 {
 }
 
 .img_footer {
-  background-image: url("src/img/backgrounds/footer_background.png");
+  background-image: url("../../img/backgrounds/footer_background.png");
 }
 
 .footer_invisible-span {

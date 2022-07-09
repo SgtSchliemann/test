@@ -12,13 +12,13 @@
         width: 800px;
         border-radius: 16px;
         margin-left: 60px; 
-        background-image: url("src/img/destinations/destinations_japan.png");
+        background-image: url("../../img/destinations/destinations_japan.png");
         &:first-child {
             margin-left: 0; 
-            background-image: url("src/img/destinations/destinations_spain.png");
+            background-image: url("../../img/destinations/destinations_spain.png");
         }
         &:last-child {
-            background-image: url("src/img/destinations/destinations_usa.png");
+            background-image: url("../../img/destinations/destinations_usa.png");
         }
     }
     &_text {
