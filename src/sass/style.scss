@@ -1,11 +1,25 @@
+
+// Abstract
+
 @import "abstract/constants";
+
+// Base
 
 @import "base/base";
 @import "base/buttons";
+@import "base/logo";
 
-@import"layouts/background";
+// Component
+
+@import "component/tool";
+
+// Layouts
+
 @import "layouts/wrapper";
+@import "layouts/steps";
+@import "layouts/background";
 @import "layouts/header";
 @import "layouts/preview";
+@import "layouts/destinations";
 @import "layouts/stories";
 @import "layouts/footer";

@@ -1,0 +1,44 @@
+// .footer {
+    // height: 61px;
+// }
+
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 0 13.35px 0;
+    align-items: center;
+}
+
+.footer_text {
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+
+    color: $color-light;
+    
+}
+
+.img_footer {
+    // height: 1331px;
+    background-image: url("/src/img/backgrounds/footer_background.png");
+}
+
+.footer_invisible-span {
+    width: 141px;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+}
+.social_icon {
+    
+    display: flex;
+    margin-left: 20px;
+
+}
+.social_icon:first-child {
+    margin-left: 0;
+}

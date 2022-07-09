@@ -1,0 +1,64 @@
+.destinations {
+    margin-top: 6px;
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        max-width: $desktop-width;
+        overflow: hidden;
+    }
+    &_photo {
+        display: flex;
+        height: 800px;
+        width: 800px;
+        border-radius: 16px;
+        margin-left: 60px; 
+        background-image: url("/src/img/destinations/destinations_japan.png");
+        &:first-child {
+            margin-left: 0; 
+            background-image: url("/src/img/destinations/destinations_spain.png");
+        }
+        &:last-child {
+            background-image: url("/src/img/destinations/destinations_usa.png");
+        }
+    }
+    &_text {
+        font-family: 'Red Hat Text';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 3.2rem;
+        line-height: 4.2rem;
+    
+        display: flex;
+        align-items: flex-end;
+        color: $color-light;
+        margin: 0 0 40px 15px;
+    }
+    &>button {
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 122px;
+    }
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+}
+
+.dot {
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    background-color: $color-primary;
+    margin-top: 24px;
+    margin-left: 10px;
+    &_transparent {
+        background-color: $color-primary-transparent;
+    }
+    &:first-child {
+        margin-left: 0;
+    }
+    &:hover {
+        cursor: pointer;
+    }
+}

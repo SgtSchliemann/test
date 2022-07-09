@@ -1,0 +1,56 @@
+.layout-3-column {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tool {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 55px;
+    &__icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+        width: 100px;
+        border-radius: 16px;
+        background-color: $color-primary;
+    }
+    &>p {
+        color: $color-additional;
+        margin-top: 30px;
+    }
+}
+
+// .icon-square {
+//     display: inline-flex;
+//     align-items: center;
+//     justify-content: center;
+//     height: 100px;
+//     width: 100px;
+//     border-radius: 16px;
+//     background-color: $color-primary;
+// }
+
+.ico {
+    display: inline-block;
+}
+
+.ico-bike {
+    background-image: url(/src/img/icons/steps_bike.svg);
+    width: 50px;
+    height: 45px;
+}
+
+.ico-calendar {
+    background-image: url(/src/img/icons/steps_calendar.svg);
+    width: 52px;
+    height: 52px;
+}
+
+.ico-plane {
+    background-image: url(/src/img/icons/steps_plane.svg);
+    width: 60px;
+    height: 45px;
+}

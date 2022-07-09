@@ -11,10 +11,15 @@
     border: none;
     display: flex;
     align-items: center;
+    transition: all .3s;
 }
 
 .button:hover {
     cursor: pointer;
+    background-color: $color-header-shadow;
+}
+.preview__button {
+    padding: 13.5px 32.5px;
 }
 
 .header__button {
@@ -24,6 +29,8 @@
     line-height: 2.1rem;
 }
 
-.button > svg {
+.button > object {
+    height: 40px;
+    width: 40px;
     margin-right: 10px;
 }

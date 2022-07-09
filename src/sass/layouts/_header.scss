@@ -12,7 +12,7 @@
 
 .img_header {
     height: 765px;
-    background-image: url("../img/header_background.png");
+    background-image: url("/src/img/backgrounds/header_background.png");
 }
 
 .navigation {
@@ -28,6 +28,11 @@
 
 .navigation__link {
     list-style: none;
-    padding: 0 21px;
+    padding-right: 42px;
     cursor: pointer;
+}
+
+.navigation__link:hover {
+    color: $color-additional;
+    transition: all 0.3s ease-out;
 }

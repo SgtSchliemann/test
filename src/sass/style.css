@@ -30,6 +30,7 @@ h2 {
   color: #F2785C;
   display: flex;
   justify-content: center;
+  margin-bottom: 40px;
 }
 
 h3 {
@@ -55,10 +56,16 @@ h3 {
   border: none;
   display: flex;
   align-items: center;
+  transition: all 0.3s;
 }
 
 .button:hover {
   cursor: pointer;
+  background-color: rgba(13, 96, 111, 0.5);
+}
+
+.preview__button {
+  padding: 13.5px 32.5px;
 }
 
 .header__button {
@@ -68,18 +75,71 @@ h3 {
   line-height: 2.1rem;
 }
 
-.button > svg {
+.button > object {
+  height: 40px;
+  width: 40px;
   margin-right: 10px;
 }
 
-.background_image {
-  background-position: center;
-  background-repeat: no-repeat;
+.layout-3-column {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tool {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 55px;
+}
+.tool__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+  border-radius: 16px;
+  background-color: #F2785C;
+}
+.tool > p {
+  color: #0D606F;
+  margin-top: 30px;
+}
+
+.ico {
+  display: inline-block;
+}
+
+.ico-bike {
+  background-image: url(/src/img/icons/steps_bike.svg);
+  width: 50px;
+  height: 45px;
+}
+
+.ico-calendar {
+  background-image: url(/src/img/icons/steps_calendar.svg);
+  width: 52px;
+  height: 52px;
+}
+
+.ico-plane {
+  background-image: url(/src/img/icons/steps_plane.svg);
+  width: 60px;
+  height: 45px;
 }
 
 .wrapper {
   max-width: 1200px;
   margin: auto;
+}
+
+.steps {
+  margin-top: 80px;
+}
+
+.background_image {
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .header {
@@ -96,7 +156,7 @@ h3 {
 
 .img_header {
   height: 765px;
-  background-image: url("../img/header_background.png");
+  background-image: url("/src/img/backgrounds/header_background.png");
 }
 
 .navigation {
@@ -111,8 +171,13 @@ h3 {
 
 .navigation__link {
   list-style: none;
-  padding: 0 21px;
+  padding-right: 42px;
   cursor: pointer;
+}
+
+.navigation__link:hover {
+  color: #0D606F;
+  transition: all 0.3s ease-out;
 }
 
 .preview {
@@ -128,6 +193,7 @@ h3 {
 .preview__wrapper > p {
   color: #FFFFFF;
   font-style: italic;
+  font-weight: 700;
   margin: 32px 0 46px 0;
 }
 
@@ -140,6 +206,7 @@ h3 {
 }
 
 .input {
+  margin-left: 23px;
   color: #F2785C;
   font-family: "Aleo";
   font-style: italic;
@@ -179,9 +246,72 @@ h3 {
   color: #F2785C;
 }
 
+.destinations {
+  margin-top: 6px;
+}
+.destinations__wrapper {
+  display: flex;
+  justify-content: center;
+  max-width: 1440px;
+  overflow: hidden;
+}
+.destinations_photo {
+  display: flex;
+  height: 800px;
+  width: 800px;
+  border-radius: 16px;
+  margin-left: 60px;
+  background-image: url("/src/img/destinations/destinations_japan.png");
+}
+.destinations_photo:first-child {
+  margin-left: 0;
+  background-image: url("/src/img/destinations/destinations_spain.png");
+}
+.destinations_photo:last-child {
+  background-image: url("/src/img/destinations/destinations_usa.png");
+}
+.destinations_text {
+  font-family: "Red Hat Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3.2rem;
+  line-height: 4.2rem;
+  display: flex;
+  align-items: flex-end;
+  color: #FFFFFF;
+  margin: 0 0 40px 15px;
+}
+.destinations > button {
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 122px;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+}
+
+.dot {
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+  background-color: #F2785C;
+  margin-top: 24px;
+  margin-left: 10px;
+}
+.dot_transparent {
+  background-color: rgba(242, 120, 92, 0.5);
+}
+.dot:first-child {
+  margin-left: 0;
+}
+.dot:hover {
+  cursor: pointer;
+}
+
 .stories {
   background-color: rgba(255, 255, 255, 0.7);
-  height: 1270px;
   color: #0D606F;
 }
 
@@ -191,6 +321,9 @@ h3 {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+}
+.stories__wrapper > button {
+  margin-top: 10px;
 }
 
 .story {
@@ -204,10 +337,6 @@ h3 {
   margin: 0 40px 30px 0;
 }
 
-.footer {
-  height: 61px;
-}
-
 .footer__wrapper {
   display: flex;
   justify-content: space-between;
@@ -216,10 +345,32 @@ h3 {
 }
 
 .footer_text {
+  font-family: "Red Hat Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
   color: #FFFFFF;
 }
 
 .img_footer {
-  height: 1331px;
-  background-image: url("../img/footer_background.png");
+  background-image: url("/src/img/backgrounds/footer_background.png");
+}
+
+.footer_invisible-span {
+  width: 141px;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+}
+
+.social_icon {
+  display: flex;
+  margin-left: 20px;
+}
+
+.social_icon:first-child {
+  margin-left: 0;
 }/*# sourceMappingURL=style.css.map */

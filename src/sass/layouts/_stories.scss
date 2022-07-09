@@ -1,8 +1,7 @@
 .stories {
     background-color: $color-search-background;
-    height: 1270px;
+    // height: 1270px;
     color: $color-additional;
-
 }
 
 .stories__wrapper {
@@ -11,7 +10,9 @@
     flex-direction: column;
     justify-content:space-around;
     align-items: center;
-
+    &>button {
+        margin-top: 10px;
+    }
 }
 
 .story {

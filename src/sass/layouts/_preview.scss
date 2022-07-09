@@ -11,6 +11,7 @@
 .preview__wrapper > p {
     color: $color-light;
     font-style: italic;
+    font-weight: 700;
     margin: 32px 0 46px 0;
 }
 
@@ -23,6 +24,7 @@
 }
 
 .input {
+    margin-left: 23px;
     color: $color-primary;
     font-family: 'Aleo';
     font-style: italic;
