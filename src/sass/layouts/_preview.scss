@@ -4,8 +4,8 @@
 
 .preview__wrapper {
     margin: 32px 0 0 146px;
-    height: 422px;
-    width: 892px;
+    max-height: 422px;
+    max-width: 892px;
 }
 
 .preview__wrapper > p {

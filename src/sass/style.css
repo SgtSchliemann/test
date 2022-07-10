@@ -5,6 +5,7 @@
 
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -186,8 +187,8 @@ h3 {
 
 .preview__wrapper {
   margin: 32px 0 0 146px;
-  height: 422px;
-  width: 892px;
+  max-height: 422px;
+  max-width: 892px;
 }
 
 .preview__wrapper > p {
@@ -355,6 +356,8 @@ h3 {
 
 .img_footer {
   background-image: url("../img/backgrounds/footer_background.png");
+  background-position: center bottom;
+  background-size: auto 100%;
 }
 
 .footer_invisible-span {
