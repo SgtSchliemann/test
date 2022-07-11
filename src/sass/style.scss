@@ -2,16 +2,19 @@
 // Abstract
 
 @import "abstract/constants";
+@import "abstract/mixins";
+@import "abstract/placeholders";
 
 // Base
 
 @import "base/base";
-@import "base/buttons";
-@import "base/logo";
 
 // Component
 
 @import "component/tool";
+@import "component/buttons";
+@import "component/logo";
+@import "component/navigation";
 
 // Layouts
 

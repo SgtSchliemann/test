@@ -1,0 +1,16 @@
+.navigation {
+  display: flex;
+  @extend %font-additional;
+  @include font($size: 1.6rem, $height: 2.1rem, $weight: 500);
+  color: $color-light;
+  }
+  
+.navigation__link {
+  list-style: none;
+  padding-right: 42px;
+  &:hover {
+    cursor: pointer;
+    color: $color-additional;
+    @extend %transition;
+  }
+}

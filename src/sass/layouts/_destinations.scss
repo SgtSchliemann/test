@@ -1,64 +1,64 @@
 .destinations {
-    margin-top: 6px;
-    &__wrapper {
-        display: flex;
-        justify-content: center;
-        max-width: $desktop-width;
-        overflow: hidden;
+  margin-top: 6px;
+  &_photo {
+    display: flex;
+    height: 800px;
+    width: 800px;
+    border-radius: 16px;
+    margin-left: 60px; 
+    background-image: url("../img/destinations/destinations_japan.png");
+    &:first-child {
+        margin-left: 0; 
+        background-image: url("../img/destinations/destinations_spain.png");
     }
-    &_photo {
-        display: flex;
-        height: 800px;
-        width: 800px;
-        border-radius: 16px;
-        margin-left: 60px; 
-        background-image: url("../img/destinations/destinations_japan.png");
-        &:first-child {
-            margin-left: 0; 
-            background-image: url("../img/destinations/destinations_spain.png");
-        }
-        &:last-child {
-            background-image: url("../img/destinations/destinations_usa.png");
-        }
+    &:last-child {
+        background-image: url("../img/destinations/destinations_usa.png");
     }
-    &_text {
-        font-family: 'Red Hat Text';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 3.2rem;
-        line-height: 4.2rem;
-    
-        display: flex;
-        align-items: flex-end;
-        color: $color-light;
-        margin: 0 0 40px 15px;
-    }
-    &>button {
-        margin: auto;
-        margin-top: 40px;
-        margin-bottom: 122px;
-    }
+  }
+  &_text {
+    @extend %font-additional;
+    @include font($size: 3.2rem, $height: 4.2rem, $weight: 500);
+    color: $color-light;
+    display: flex;
+    align-items: flex-end;
+    margin: 0 0 40px 15px;
+  }
+  &>button {
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 122px;
+  }
+  > h2 {
+    margin-bottom: 45px;
+  }
+}
+
+.destinations__wrapper {
+  display: flex;
+  justify-content: center;
+  max-width: $desktop-width;
+  overflow: hidden;
 }
 
 .dots {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .dot {
-    height: 20px;
-    width: 20px;
-    border-radius: 10px;
-    background-color: $color-primary;
-    margin-top: 24px;
-    margin-left: 10px;
-    &_transparent {
-        background-color: $color-primary-transparent;
-    }
-    &:first-child {
-        margin-left: 0;
-    }
-    &:hover {
-        cursor: pointer;
-    }
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+  background-color: $color-primary;
+  margin-top: 24px;
+  margin-left: 10px;
+  &_transparent {
+    background-color: $color-primary-transparent;
+  }
+  &:first-child {
+    margin-left: 0;
+  }
+  &:hover {
+    cursor: pointer;
+  }
 }

@@ -1,46 +1,34 @@
-// .footer {
-    // height: 61px;
-// }
-
 .footer__wrapper {
-    display: flex;
-    justify-content: space-between;
-    padding: 14px 0 13.35px 0;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 0 13.35px 0;
+  align-items: center;
 }
 
 .footer_text {
-    font-family: 'Red Hat Text';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1.6rem;
-    line-height: 2.1rem;
-
-    color: $color-light;
-    
+  @extend %font-additional;
+  @include font($size: 1.6rem, $height: 2.1rem, $weight: 500);
+  color: $color-light;
 }
 
 .img_footer {
-    // height: 1331px;
-    background-image: url("../img/backgrounds/footer_background.png");
-    background-position: center bottom;
-    background-size: auto 100%;
+  background-image: url("../img/backgrounds/footer_background.png");
+  background-position: center bottom;
+  background-size: auto 100%;
 }
 
 .footer_invisible-span {
-    width: 141px;
+  width: 140px;
 }
 
 .social {
+  display: flex;
+  align-items: center;
+  &_icon {
     display: flex;
-    align-items: center;
-}
-.social_icon {
-    
-    display: flex;
-    margin-left: 20px;
-
-}
-.social_icon:first-child {
-    margin-left: 0;
+    margin-left: 21px;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
 }

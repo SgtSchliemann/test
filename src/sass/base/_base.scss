@@ -1,51 +1,36 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    font-size: 10px;
-    scroll-behavior: smooth;
+  @include font($size: 10px);
+  scroll-behavior: smooth;
 }
 
 body {
-    font-size: 2rem;
-    font-family: 'Aleo', 'Georgia', serif;   
+  @extend %font-primary;
+  @include font($size: 2.0rem);
 }
 
 h1 {
-    font-family: 'Aleo';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 8.0rem;
-    line-height: 9.6rem;
-    color: $color-light;
+  @extend %font-primary;
+  @include font($size: 8.0rem, $height: 9.6rem, $weight: 700);
+  color: $color-light;
 }
 
 h2 {
-    font-family: 'Red Hat Text';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 4.0rem;
-    line-height: 5.3rem;
-
-    color: $color-primary;
-
-    display: flex;
-    justify-content: center;
-    
-    margin-bottom: 40px;
+  @extend %font-additional;
+  @include font($size: 4.0rem, $height: 5.3rem, $weight: 500);
+  color: $color-primary;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
 }
 
 h3 {
-    font-family: 'Aleo';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 3.5rem;
-    line-height: 4.2rem;
-    
-    margin-bottom: 24px;
-
-    color: $color-additional;
-
+  @extend %font-primary;
+  @include font($size: 3.5rem, $height: 4.2rem, $weight: 400);
+  color: $color-additional;
+  margin-bottom: 24px;
 }

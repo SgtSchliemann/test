@@ -4,23 +4,32 @@
 }
 
 .tool {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 55px;
-    &__icon {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        height: 100px;
-        width: 100px;
-        border-radius: 16px;
-        background-color: $color-primary;
-    }
-    &>p {
-        color: $color-additional;
-        margin-top: 30px;
-    }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+  padding-left: 71px;
+  &>p {
+    color: $color-additional;
+    margin-top: 30px;
+  }
+  &:first-child {
+    padding-left: 11px;
+  }
+  &:last-child {
+    padding-left: 0;
+    padding-right: 12px;
+  }
+}
+
+.tool__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+  border-radius: 16px;
+  background-color: $color-primary;
 }
 
 // .icon-square {
@@ -34,23 +43,20 @@
 // }
 
 .ico {
-    display: inline-block;
-}
-
-.ico-bike {
+  display: inline-block;
+  &-bike {
     background-image: url(../img/icons/steps_bike.svg);
     width: 50px;
     height: 45px;
-}
-
-.ico-calendar {
+  }
+  &-calendar {
     background-image: url(../img/icons/steps_calendar.svg);
     width: 52px;
     height: 52px;
-}
-
-.ico-plane {
+  }
+  &-plane {
     background-image: url(../img/icons/steps_plane.svg);
     width: 60px;
     height: 45px;
+  }
 }

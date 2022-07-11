@@ -1,48 +1,38 @@
 .preview {
-    color: $color-light;
+  color: $color-light;
 }
 
 .preview__wrapper {
-    margin: 32px 0 0 146px;
-    max-height: 422px;
-    max-width: 892px;
-}
-
-.preview__wrapper > p {
+  margin: 32px 0 0 146px;
+  max-height: 422px;
+  max-width: 892px;
+  > p {
+    @include font($size: 2.0rem, $height: 2.4rem, $weight: 700, $style: italic);
     color: $color-light;
-    font-style: italic;
-    font-weight: 700;
     margin: 32px 0 46px 0;
+  }
 }
 
 .preview__input {
-    background-color: $color-search-background;
-    border-radius: 16px;
-    display: flex;
-    justify-content: space-between;
-    padding: 18px
+  background-color: $color-search-background;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  padding: 18px;
 }
 
 .input {
-    margin-left: 23px;
+  @extend %font-primary;
+  @include font($size: 2.4rem, $height: 2.9rem, $weight: 400, $style: italic);
+  color: $color-primary;
+  margin: 0 10px 0 23px;
+  display: block;
+  border: none;
+  background-color: transparent;
+  flex-grow: 1;
+  &::placeholder {
+    @extend %font-primary;
+    @include font($size: 2.4rem, $height: 2.9rem, $weight: 400, $style: italic);
     color: $color-primary;
-    font-family: 'Aleo';
-    font-style: italic;
-    font-weight: 400;
-    font-size: 2.4rem;
-    line-height: 2.9rem;
-    display: block;
-    border: none;
-    background-color: transparent;
-    flex-grow: 1;
-}
-
-.input::placeholder {
-    font-family: 'Aleo';
-    font-style: italic;
-    font-weight: 400;
-    font-size: 2.4rem;
-    line-height: 2.9rem;
-
-    color: $color-primary;
+  }
 }
