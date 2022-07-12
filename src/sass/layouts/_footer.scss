@@ -3,12 +3,18 @@
   justify-content: space-between;
   padding: 14px 0 13.35px 0;
   align-items: center;
+  @include media-mobile {
+    justify-content: center;
+  }
 }
 
 .footer_text {
   @extend %font-additional;
   @include font($size: 1.6rem, $height: 2.1rem, $weight: 500);
   color: $color-light;
+  @include media-mobile {
+    display: none;
+  }
 }
 
 .img_footer {
@@ -19,6 +25,9 @@
 
 .footer_invisible-span {
   width: 140px;
+  @include media-mobile {
+    display: none;
+  }
 }
 
 .social {

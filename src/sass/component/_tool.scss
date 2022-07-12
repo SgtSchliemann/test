@@ -1,6 +1,9 @@
 .layout-3-column {
     display: flex;
     justify-content: space-between;
+    @include media-mobile {
+      justify-content: space-around;
+    }
 }
 
 .tool {
@@ -9,16 +12,31 @@
   align-items: center;
   margin-bottom: 50px;
   padding-left: 71px;
+  @include media-mobile {
+    padding: 0;
+  }
   &>p {
     color: $color-additional;
     margin-top: 30px;
   }
   &:first-child {
     padding-left: 11px;
+    @include media-mobile {
+      padding: 0;
+      > p {
+        text-align: left;
+      }
+    }
   }
   &:last-child {
     padding-left: 0;
     padding-right: 12px;
+    @include media-mobile {
+      padding: 0;
+      > p {
+        text-align: right;
+      }
+    }
   }
 }
 
@@ -30,6 +48,10 @@
   width: 100px;
   border-radius: 16px;
   background-color: $color-primary;
+  @include media-mobile {
+    height: 70px;
+    width: 70px;
+  }
 }
 
 // .icon-square {
@@ -48,15 +70,30 @@
     background-image: url(../img/icons/steps_bike.svg);
     width: 50px;
     height: 45px;
+    @include media-mobile {
+      width: 35px;
+      height: 31.5px;
+      background-size: cover;
+    }
   }
   &-calendar {
     background-image: url(../img/icons/steps_calendar.svg);
     width: 52px;
     height: 52px;
+    @include media-mobile {
+      width: 35px;
+      height: 35px;
+      background-size: cover;
+    }
   }
   &-plane {
     background-image: url(../img/icons/steps_plane.svg);
     width: 60px;
     height: 45px;
+    @include media-mobile {
+      width: 40px;
+      height: 30px;
+      background-size: cover;
+    }
   }
 }

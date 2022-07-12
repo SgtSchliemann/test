@@ -1,6 +1,5 @@
 .stories {
   background-color: $color-search-background;
-  // height: 1270px;
   color: $color-additional;
 }
 
@@ -14,9 +13,11 @@
     padding: 10px 35.5px;
     margin-top: 9px;
     margin-left: 4px;
+    @include media-mobile {
+      padding: 7.5px 12px;
+    }
   }
 }
-
 .story {
   display: flex;
   flex-direction: row-reverse;
