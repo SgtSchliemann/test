@@ -37,7 +37,7 @@ body {
   font-weight: normal;
   font-style: normal;
 }
-@media (max-width: 1024px) {
+@media (max-width: 390px) {
   body {
     font-size: 0.9rem;
     line-height: 1.08rem;
@@ -53,7 +53,7 @@ h1 {
   font-style: normal;
   color: #FFFFFF;
 }
-@media (max-width: 1024px) {
+@media (max-width: 390px) {
   h1 {
     display: none;
   }
@@ -69,7 +69,7 @@ h2 {
   justify-content: center;
   margin-bottom: 40px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 390px) {
   h2 {
     font-size: 1.4rem;
     line-height: 1.852rem;
@@ -87,7 +87,7 @@ h3 {
   color: #0D606F;
   margin-bottom: 24px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 390px) {
   h3 {
     font-size: 1.1rem;
     line-height: 1.32rem;
@@ -108,7 +108,7 @@ h3 {
   margin-bottom: 56px;
   padding-left: 71px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 390px) {
   .tool {
     padding: 0;
     margin: 10px 0 20px;
@@ -125,7 +125,7 @@ h3 {
 .tool:first-child {
   padding-left: 11px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 390px) {
   .tool:first-child {
     padding: 0;
   }
@@ -137,7 +137,7 @@ h3 {
   padding-left: 0;
   padding-right: 12px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 390px) {
   .tool:last-child {
     padding: 0;
     align-items: flex-end;
@@ -157,7 +157,7 @@ h3 {
   border-radius: 16px;
   background-color: #F2785C;
 }
-@media (max-width: 1024px) {
+@media (max-width: 390px) {
   .tool__icon {
     height: 70px;
     width: 70px;
@@ -172,7 +172,7 @@ h3 {
   width: 50px;
   height: 45px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 390px) {
   .ico-bike {
     width: 35px;
     height: 31.5px;
@@ -184,7 +184,7 @@ h3 {
   width: 52px;
   height: 52px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 390px) {
   .ico-calendar {
     width: 35px;
     height: 35px;
@@ -196,7 +196,7 @@ h3 {
   width: 60px;
   height: 45px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 390px) {
   .ico-plane {
     width: 40px;
     height: 30px;
@@ -217,7 +217,7 @@ h3 {
   display: flex;
   align-items: center;
 }
-@media (max-width: 1024px) {
+@media (max-width: 390px) {
   .button {
     font-size: 1.1rem;
     line-height: 1.455rem;
@@ -235,7 +235,7 @@ h3 {
   width: 40px;
   margin-right: 10px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 390px) {
   .button > object {
     height: 10px;
     width: 10px;
@@ -247,7 +247,7 @@ h3 {
 .preview__button {
   padding: 13.5px 33.5px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 390px) {
   .preview__button {
     padding: 7.5px 9px;
   }
@@ -261,7 +261,7 @@ h3 {
   font-weight: normal;
   font-style: normal;
 }
-@media (max-width: 1024px) {
+@media (max-width: 390px) {
   .header__button {
     display: none;
   }
@@ -270,7 +270,7 @@ h3 {
 .logo_path {
   visibility: visible;
 }
-@media (max-width: 1024px) {
+@media (max-width: 390px) {
   .logo_path {
     visibility: hidden;
   }
@@ -284,7 +284,7 @@ h3 {
   font-style: normal;
   color: #FFFFFF;
 }
-@media (max-width: 1024px) {
+@media (max-width: 390px) {
   .navigation {
     width: 165px;
     height: 250px;
@@ -308,7 +308,7 @@ h3 {
   list-style: none;
   padding-right: 42px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 390px) {
   .navigation__link {
     padding: 5px 15px 5px 0;
   }
@@ -319,7 +319,7 @@ h3 {
 .navigation__link-hidden {
   display: none;
 }
-@media (max-width: 1024px) {
+@media (max-width: 390px) {
   .navigation__link-hidden {
     display: inline;
   }
@@ -332,7 +332,7 @@ h3 {
 .menu-cross {
   display: none;
 }
-@media (max-width: 1024px) {
+@media (max-width: 390px) {
   .menu-cross {
     display: block;
     cursor: pointer;
@@ -347,7 +347,7 @@ h3 {
 .hamburger {
   display: none;
 }
-@media (max-width: 1024px) {
+@media (max-width: 390px) {
   .hamburger {
     display: block;
     cursor: pointer;
@@ -362,7 +362,7 @@ h3 {
   max-width: 1200px;
   margin: auto;
 }
-@media (max-width: 1024px) {
+@media (max-width: 390px) {
   .wrapper {
     margin: 0 15px;
   }
@@ -371,7 +371,7 @@ h3 {
 .steps {
   margin-top: 80px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 390px) {
   .steps {
     margin-top: 20px;
   }
@@ -386,7 +386,7 @@ h3 {
   background: rgba(242, 120, 92, 0.7);
   box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
 }
-@media (max-width: 1024px) {
+@media (max-width: 390px) {
   .header {
     background: linear-gradient(180deg, #0D606F 0%, rgba(13, 96, 111, 0) 50%);
     box-shadow: none;
@@ -399,7 +399,7 @@ h3 {
   align-items: center;
   justify-content: space-between;
 }
-@media (max-width: 1024px) {
+@media (max-width: 390px) {
   .header__wrapper {
     padding: 43px 5px 63.5px 0px;
     align-items: flex-start;
@@ -412,7 +412,7 @@ h3 {
   background-position: center top;
   background-size: auto;
 }
-@media (max-width: 1024px) {
+@media (max-width: 390px) {
   .img_header {
     height: 251px;
     background-image: url("../img/mobile/backgrounds/header_background.jpg");
@@ -429,7 +429,7 @@ h3 {
   max-height: 422px;
   max-width: 892px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 390px) {
   .preview__wrapper {
     margin: 0 15px;
   }
@@ -442,7 +442,7 @@ h3 {
   color: #FFFFFF;
   margin: 32px 0 46px 0;
 }
-@media (max-width: 1024px) {
+@media (max-width: 390px) {
   .preview__wrapper > p {
     display: none;
   }
@@ -455,7 +455,7 @@ h3 {
   justify-content: space-between;
   padding: 18px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 390px) {
   .preview__input {
     padding: 9px;
   }
@@ -473,7 +473,7 @@ h3 {
   background-color: transparent;
   flex-grow: 1;
 }
-@media (max-width: 1024px) {
+@media (max-width: 390px) {
   .input {
     font-size: 1.4rem;
     line-height: 1.68rem;
@@ -503,7 +503,7 @@ h3 {
   font-style: italic;
   color: #F2785C;
 }
-@media (max-width: 1024px) {
+@media (max-width: 390px) {
   .input::-moz-placeholder {
     font-size: 1.4rem;
     line-height: 1.68rem;
@@ -532,7 +532,7 @@ h3 {
   margin-left: 60px;
   background-image: url("../img/destinations/destinations_japan.jpg");
 }
-@media (max-width: 1024px) {
+@media (max-width: 390px) {
   .destinations_photo {
     height: 210px;
     width: 360px;
@@ -545,7 +545,7 @@ h3 {
   margin-left: 0;
   background-image: url("../img/destinations/destinations_spain.jpg");
 }
-@media (max-width: 1024px) {
+@media (max-width: 390px) {
   .destinations_photo:first-child {
     background-image: url("../img/mobile/destinations/destinations_spain.jpg");
     order: 1;
@@ -554,7 +554,7 @@ h3 {
 .destinations_photo:last-child {
   background-image: url("../img/destinations/destinations_usa.jpg");
 }
-@media (max-width: 1024px) {
+@media (max-width: 390px) {
   .destinations_photo:last-child {
     background-image: url("../img/mobile/destinations/destinations_usa.jpg");
     order: 2;
@@ -570,7 +570,7 @@ h3 {
   align-items: flex-end;
   margin: 0 0 40px 15px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 390px) {
   .destinations_text {
     font-size: 2rem;
     line-height: 2.646rem;
@@ -585,7 +585,7 @@ h3 {
   margin-top: 40px;
   margin-bottom: 122px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 390px) {
   .destinations > button {
     margin-top: 10px;
     margin-bottom: 20px;
@@ -594,7 +594,7 @@ h3 {
 .destinations > h2 {
   margin-bottom: 45px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 390px) {
   .destinations > h2 {
     margin-bottom: 20px;
   }
@@ -619,7 +619,7 @@ h3 {
   background-color: #F2785C;
   margin: 24px 0 0 10px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 390px) {
   .dot {
     height: 8px;
     width: 8px;
@@ -634,19 +634,56 @@ h3 {
 .dot:first-child {
   margin-left: 0;
 }
-@media (max-width: 1024px) {
+@media (max-width: 390px) {
   .dot:first-child {
     margin-left: 6px;
     order: 1;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 390px) {
   .dot:last-child {
     order: 2;
   }
 }
 .dot:hover {
   cursor: pointer;
+}
+
+.arrows {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  margin-top: -120px;
+  margin-bottom: 90px;
+}
+
+.left-arrow {
+  display: none;
+}
+@media (max-width: 390px) {
+  .left-arrow {
+    display: block;
+    cursor: pointer;
+    background-image: url("../img/icons/destinations_arrow-left.svg");
+    background-position: center;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.right-arrow {
+  display: none;
+}
+@media (max-width: 390px) {
+  .right-arrow {
+    display: block;
+    cursor: pointer;
+    background-image: url("../img/icons/destinations_arrow-right.svg");
+    background-position: center;
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .stories {
@@ -661,7 +698,7 @@ h3 {
   justify-content: space-around;
   align-items: center;
 }
-@media (max-width: 1024px) {
+@media (max-width: 390px) {
   .stories__wrapper {
     padding: 10px 0 0 0;
   }
@@ -670,7 +707,7 @@ h3 {
   padding: 10px 35.5px;
   margin: 9px 0 0 4px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 390px) {
   .stories__wrapper > button {
     padding: 7.5px 12px;
     margin: 0 0 13px 0;
@@ -691,7 +728,7 @@ h3 {
   border-radius: 16px;
   margin: 0 40px 30px 0;
 }
-@media (max-width: 1024px) {
+@media (max-width: 390px) {
   .story__photo {
     height: 130px;
     min-width: 155px;
@@ -701,7 +738,7 @@ h3 {
 .story__photo-thai {
   background-image: url("../img/stories/story_thai.jpg");
 }
-@media (max-width: 1024px) {
+@media (max-width: 390px) {
   .story__photo-thai {
     background-image: url("../img/mobile/stories/story_thai.jpg");
   }
@@ -709,7 +746,7 @@ h3 {
 .story__photo-utah {
   background-image: url("../img/stories/story_utah.jpg");
 }
-@media (max-width: 1024px) {
+@media (max-width: 390px) {
   .story__photo-utah {
     background-image: url("../img/mobile/stories/story_utah.jpg");
   }
@@ -717,7 +754,7 @@ h3 {
 .story__photo-mountains {
   background-image: url("../img/stories/story_mountains.jpg");
 }
-@media (max-width: 1024px) {
+@media (max-width: 390px) {
   .story__photo-mountains {
     background-image: url("../img/mobile/stories/story_mountains.jpg");
   }
@@ -725,14 +762,14 @@ h3 {
 .story__photo-journey {
   background-image: url("../img/stories/story_journey.jpg");
 }
-@media (max-width: 1024px) {
+@media (max-width: 390px) {
   .story__photo-journey {
     background-image: url("../img/mobile/stories/story_journey.jpg");
     margin-bottom: 13px;
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 390px) {
   .story__text {
     display: none;
   }
@@ -740,7 +777,7 @@ h3 {
 .story__text-mobile {
   display: none;
 }
-@media (max-width: 1024px) {
+@media (max-width: 390px) {
   .story__text-mobile {
     display: block;
   }
@@ -760,7 +797,7 @@ h3 {
   padding: 14px 0 13.35px 0;
   align-items: center;
 }
-@media (max-width: 1024px) {
+@media (max-width: 390px) {
   .footer__wrapper {
     justify-content: center;
     padding: 15px 0 16.35px 0;
@@ -774,7 +811,7 @@ h3 {
   font-style: normal;
   color: #FFFFFF;
 }
-@media (max-width: 1024px) {
+@media (max-width: 390px) {
   .footer_text {
     display: none;
   }
@@ -785,7 +822,7 @@ h3 {
   background-position: center bottom;
   background-size: auto 100%;
 }
-@media (max-width: 1024px) {
+@media (max-width: 390px) {
   .img_footer {
     background-image: url("../img/mobile/backgrounds/footer_background.jpg");
   }
@@ -794,7 +831,7 @@ h3 {
 .footer_invisible-span {
   width: 140px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 390px) {
   .footer_invisible-span {
     display: none;
   }
