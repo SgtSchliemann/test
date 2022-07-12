@@ -1,7 +1,7 @@
 .navigation {
   display: flex;
   @extend %font-additional;
-  @include font($size: 1.6rem, $height: 2.1rem, $weight: 500);
+  @include font($size: 1.6rem, $height: 2.117rem, $weight: 500);
   color: $color-light;
   @include media-mobile {
     width: 165px;
@@ -13,8 +13,10 @@
     right: -100%;
     top: 0;
     flex-direction: column;
-    @extend %transition;
-    .navigation.active {
+    transition: 0.3s;
+    align-items: flex-end;
+    justify-content: flex-end;
+    &.active {
       right: 0;
     }
   }
@@ -23,6 +25,12 @@
 .navigation__link {
   list-style: none;
   padding-right: 42px;
+  @include media-mobile {
+    padding: 5px 15px 5px 0;
+    &:last-child {
+      padding: 5px 15px 30px 0;
+    }
+  }
   &-hidden {
     display: none;
     @include media-mobile {
@@ -34,7 +42,17 @@
     color: $color-additional;
     @extend %transition;
   }
+}
+
+.menu-cross {
+  display: none;    
   @include media-mobile {
-    display: none;
+    display: block;
+    cursor: pointer;
+    background-image: url("../img/icons/hamburger_cross.svg");
+    background-position: center;
+    width: 15px;
+    height: 15px;
+    margin-right: 127px;
   }
 }

@@ -1,6 +1,12 @@
-.hamburger-ico {
-    display: none;
-    @include media-mobile {
-        display: block;
-    }
+.hamburger {
+  display: none;
+  @include media-mobile {
+    display: block;
+    cursor: pointer;
+    background-image: url("../img/icons/hamburger.svg");
+    background-position: center;
+    width: 32px;
+    height: 35px;
+    
+  }
 }
