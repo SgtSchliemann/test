@@ -1,9 +1,6 @@
-.hamburger {
-    display: inline-block;
-    height: 16px;
-    width: 26.25px;
-    
-    @include media-desktop {
-        display: none;
+.hamburger-ico {
+    display: none;
+    @include media-mobile {
+        display: block;
     }
 }

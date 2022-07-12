@@ -17,7 +17,7 @@
     margin: 9px 0 0 4px;
     @include media-mobile {
       padding: 7.5px 12px;
-      margin: 10px 0 13px 0;
+      margin: 0 0 13px 0;
     }
   }
 }
@@ -40,27 +40,28 @@
     margin: 0 10px 15px 0;
   }
   &-thai {
-    background-image: url("../img/stories/story_thai.png");
+    background-image: url("../img/stories/story_thai.jpg");
     @include media-mobile {
       background-image: url("../img/mobile/stories/story_thai.jpg");
     }
   }
   &-utah {
-    background-image: url("../img/stories/story_utah.png");
+    background-image: url("../img/stories/story_utah.jpg");
     @include media-mobile {
       background-image: url("../img/mobile/stories/story_utah.jpg");
     }
   }
   &-mountains {
-    background-image: url("../img/stories/story_mountains.png");
+    background-image: url("../img/stories/story_mountains.jpg");
     @include media-mobile {
       background-image: url("../img/mobile/stories/story_mountains.jpg");
     }
   }
   &-journey {
-    background-image: url("../img/stories/story_journey.png");
+    background-image: url("../img/stories/story_journey.jpg");
     @include media-mobile {
       background-image: url("../img/mobile/stories/story_journey.jpg");
+      margin-bottom: 13px;
     }
   }
 }

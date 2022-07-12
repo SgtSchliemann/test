@@ -1,35 +1,32 @@
 .destinations {
-  margin-top: 6px;
   &_photo {
     display: flex;
     height: 800px;
     width: 800px;
     border-radius: 16px;
     margin-left: 60px; 
-    background-image: url("../img/destinations/destinations_japan.png");
+    background-image: url("../img/destinations/destinations_japan.jpg");
     @include media-mobile{
+      height: 210px;
+      width: 360px;
+      margin-left: 15px;
       background-image: url("../img/mobile/destinations/destinations_japan.jpg");
       order: 0;
     }
     &:first-child {
         margin-left: 0; 
-        background-image: url("../img/destinations/destinations_spain.png");
+        background-image: url("../img/destinations/destinations_spain.jpg");
         @include media-mobile{
           background-image: url("../img/mobile/destinations/destinations_spain.jpg");
           order: 1;
         }
     }
     &:last-child {
-        background-image: url("../img/destinations/destinations_usa.png");
+        background-image: url("../img/destinations/destinations_usa.jpg");
         @include media-mobile{
           background-image: url("../img/mobile/destinations/destinations_usa.jpg");
           order: 2;
         }
-    }
-    @include media-mobile {
-      height: 210px;
-      width: 360px;
-      margin-left: 15px;
     }
   }
   &_text {

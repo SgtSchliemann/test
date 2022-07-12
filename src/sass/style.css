@@ -93,7 +93,7 @@ h3 {
     line-height: 1.32rem;
     font-weight: 700;
     font-style: normal;
-    margin-bottom: 10px;
+    margin: 5px 0 10px 0;
   }
 }
 
@@ -101,12 +101,6 @@ h3 {
   display: flex;
   justify-content: space-between;
 }
-@media (max-width: 1024px) {
-  .layout-3-column {
-    justify-content: space-around;
-  }
-}
-
 .tool {
   display: flex;
   flex-direction: column;
@@ -117,10 +111,14 @@ h3 {
 @media (max-width: 1024px) {
   .tool {
     padding: 0;
-    margin-bottom: 20px;
+    margin: 10px 0 20px;
   }
 }
 .tool > p {
+  font-size: 1rem;
+  line-height: 1.2rem;
+  font-weight: 400;
+  font-style: normal;
   color: #0D606F;
   margin-top: 20px;
 }
@@ -132,7 +130,7 @@ h3 {
     padding: 0;
   }
   .tool:first-child > p {
-    max-width: 70px;
+    max-width: 75px;
   }
 }
 .tool:last-child {
@@ -146,7 +144,7 @@ h3 {
   }
   .tool:last-child > p {
     text-align: right;
-    max-width: 72px;
+    max-width: 80px;
   }
 }
 
@@ -269,6 +267,15 @@ h3 {
   }
 }
 
+.logo_path {
+  visibility: visible;
+}
+@media (max-width: 1024px) {
+  .logo_path {
+    visibility: hidden;
+  }
+}
+
 .navigation {
   display: flex;
   font-size: 1.6rem;
@@ -277,10 +284,29 @@ h3 {
   font-style: normal;
   color: #FFFFFF;
 }
+@media (max-width: 1024px) {
+  .navigation {
+    width: 165px;
+    height: 250px;
+    background-color: #F2785C;
+    border-radius: 10px;
+    box-shadow: 0px 4px 3px rgba(13, 96, 111, 0.25);
+    position: fixed;
+    right: -100%;
+  }
+}
 
 .navigation__link {
   list-style: none;
   padding-right: 42px;
+}
+.navigation__link-hidden {
+  display: none;
+}
+@media (max-width: 1024px) {
+  .navigation__link-hidden {
+    display: inline;
+  }
 }
 .navigation__link:hover {
   cursor: pointer;
@@ -292,14 +318,12 @@ h3 {
   }
 }
 
-.hamburger {
-  display: inline-block;
-  height: 16px;
-  width: 26.25px;
+.hamburger-ico {
+  display: none;
 }
-@media (max-width: 1440px) {
-  .hamburger {
-    display: none;
+@media (max-width: 1024px) {
+  .hamburger-ico {
+    display: block;
   }
 }
 
@@ -344,10 +368,16 @@ h3 {
   align-items: center;
   justify-content: space-between;
 }
+@media (max-width: 1024px) {
+  .header__wrapper {
+    padding: 43px 5px 63.5px 0px;
+    align-items: flex-start;
+  }
+}
 
 .img_header {
   height: 765px;
-  background-image: url("../img/backgrounds/header_background.png");
+  background-image: url("../img/backgrounds/header_background.jpg");
   background-position: center top;
   background-size: auto;
 }
@@ -418,6 +448,7 @@ h3 {
     line-height: 1.68rem;
     font-weight: 400;
     font-style: italic;
+    margin: 0 10px 0 9px;
   }
 }
 .input::-moz-placeholder {
@@ -462,26 +493,26 @@ h3 {
   }
 }
 
-.destinations {
-  margin-top: 6px;
-}
 .destinations_photo {
   display: flex;
   height: 800px;
   width: 800px;
   border-radius: 16px;
   margin-left: 60px;
-  background-image: url("../img/destinations/destinations_japan.png");
+  background-image: url("../img/destinations/destinations_japan.jpg");
 }
 @media (max-width: 1024px) {
   .destinations_photo {
+    height: 210px;
+    width: 360px;
+    margin-left: 15px;
     background-image: url("../img/mobile/destinations/destinations_japan.jpg");
     order: 0;
   }
 }
 .destinations_photo:first-child {
   margin-left: 0;
-  background-image: url("../img/destinations/destinations_spain.png");
+  background-image: url("../img/destinations/destinations_spain.jpg");
 }
 @media (max-width: 1024px) {
   .destinations_photo:first-child {
@@ -490,19 +521,12 @@ h3 {
   }
 }
 .destinations_photo:last-child {
-  background-image: url("../img/destinations/destinations_usa.png");
+  background-image: url("../img/destinations/destinations_usa.jpg");
 }
 @media (max-width: 1024px) {
   .destinations_photo:last-child {
     background-image: url("../img/mobile/destinations/destinations_usa.jpg");
     order: 2;
-  }
-}
-@media (max-width: 1024px) {
-  .destinations_photo {
-    height: 210px;
-    width: 360px;
-    margin-left: 15px;
   }
 }
 .destinations_text {
@@ -618,7 +642,7 @@ h3 {
 @media (max-width: 1024px) {
   .stories__wrapper > button {
     padding: 7.5px 12px;
-    margin: 10px 0 13px 0;
+    margin: 0 0 13px 0;
   }
 }
 
@@ -644,7 +668,7 @@ h3 {
   }
 }
 .story__photo-thai {
-  background-image: url("../img/stories/story_thai.png");
+  background-image: url("../img/stories/story_thai.jpg");
 }
 @media (max-width: 1024px) {
   .story__photo-thai {
@@ -652,7 +676,7 @@ h3 {
   }
 }
 .story__photo-utah {
-  background-image: url("../img/stories/story_utah.png");
+  background-image: url("../img/stories/story_utah.jpg");
 }
 @media (max-width: 1024px) {
   .story__photo-utah {
@@ -660,7 +684,7 @@ h3 {
   }
 }
 .story__photo-mountains {
-  background-image: url("../img/stories/story_mountains.png");
+  background-image: url("../img/stories/story_mountains.jpg");
 }
 @media (max-width: 1024px) {
   .story__photo-mountains {
@@ -668,11 +692,12 @@ h3 {
   }
 }
 .story__photo-journey {
-  background-image: url("../img/stories/story_journey.png");
+  background-image: url("../img/stories/story_journey.jpg");
 }
 @media (max-width: 1024px) {
   .story__photo-journey {
     background-image: url("../img/mobile/stories/story_journey.jpg");
+    margin-bottom: 13px;
   }
 }
 
@@ -725,7 +750,7 @@ h3 {
 }
 
 .img_footer {
-  background-image: url("../img/backgrounds/footer_background.png");
+  background-image: url("../img/backgrounds/footer_background.jpg");
   background-position: center bottom;
   background-size: auto 100%;
 }

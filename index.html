@@ -15,22 +15,24 @@
           <a href="#" class="logo">
             <object type="image/svg+xml" data="src/img/logo.svg" class="logo-object">
               Your browser does not support SVG
-           </object>
+            </object>
           </a>
-          <span class="hamburger">
-            <span class="hamburger__line"></span>
-          </span>
-            <nav class="header__navigation">
-                <ul class="navigation">
-                    <li class="navigation__link" onclick="location.href='#preview'">How It Works</li> 
-                    <li class="navigation__link" onclick="location.href='#steps'">Plan Your Trip</li>
-                    <li class="navigation__link" onclick="location.href='#destinations'">Destinations</li> 
-                    <li class="navigation__link" onclick="location.href='#stories'">Travel Stories</li> 
-                </ul>
-            </nav>
-            <button class="button header__button">
-                Login
-            </button>
+          <nav class="header__navigation">
+            <ul class="navigation">
+              <li class="navigation__link" onclick="location.href='#preview'">How It Works</li> 
+              <li class="navigation__link" onclick="location.href='#steps'">Plan Your Trip</li>
+              <li class="navigation__link" onclick="location.href='#destinations'">Destinations</li> 
+              <li class="navigation__link" onclick="location.href='#stories'">Travel Stories</li>
+              <li class="navigation__link navigation__link-hidden">Account</li>
+              <li class="navigation__link navigation__link-hidden" onclick="location.href='#social'">Social Media</li>
+            </ul>
+          </nav>
+          <button class="button header__button">
+            Login
+          </button>
+          <object type="image/svg+xml" data="src/img/icons/hamburger.svg" class="hamburger-ico">
+            Your browser does not support SVG
+          </object>
         </div>
     </header>
     <section id="preview" class="preview">
@@ -154,7 +156,7 @@
         <span class="footer_text">
           All Rights Reserved © Travel Portal
         </span>
-        <div class="social">
+        <div id="social" class="social">
           <a href="#" class="social_icon">
             <object type="image/svg+xml" data="src/img/icons/social_insta.svg">
               Your browser does not support SVG
@@ -174,5 +176,6 @@
       </div>
     </footer>
   </div>
+  <script src="script.js"></script>
 </body>
 </html>
