@@ -75,6 +75,7 @@ h2 {
     line-height: 1.852rem;
     font-weight: 500;
     font-style: normal;
+    margin-bottom: 10px;
   }
 }
 
@@ -92,6 +93,7 @@ h3 {
     line-height: 1.32rem;
     font-weight: 700;
     font-style: normal;
+    margin-bottom: 10px;
   }
 }
 
@@ -119,7 +121,7 @@ h3 {
 }
 .tool > p {
   color: #0D606F;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 .tool:first-child {
   padding-left: 11px;
@@ -129,7 +131,7 @@ h3 {
     padding: 0;
   }
   .tool:first-child > p {
-    text-align: left;
+    max-width: 70px;
   }
 }
 .tool:last-child {
@@ -139,9 +141,11 @@ h3 {
 @media (max-width: 500px) {
   .tool:last-child {
     padding: 0;
+    align-items: flex-end;
   }
   .tool:last-child > p {
     text-align: right;
+    max-width: 72px;
   }
 }
 
@@ -304,7 +308,7 @@ h3 {
 }
 @media (max-width: 500px) {
   .wrapper {
-    padding: 0 15px;
+    margin: 0 15px;
   }
 }
 
@@ -338,11 +342,14 @@ h3 {
 .img_header {
   height: 765px;
   background-image: url("../img/backgrounds/header_background.png");
+  background-position: center top;
+  background-size: auto;
 }
 @media (max-width: 500px) {
   .img_header {
     height: 251px;
-    background-image: url("../img/mobile/backgrounds/header_background_mob.jpg");
+    background-image: url("../img/mobile/backgrounds/header_background.jpg");
+    background-size: 100%;
   }
 }
 
@@ -460,12 +467,27 @@ h3 {
   margin-left: 60px;
   background-image: url("../img/destinations/destinations_japan.png");
 }
+@media (max-width: 500px) {
+  .destinations_photo {
+    background-image: url("../img/mobile/destinations/destinations_japan.jpg");
+  }
+}
 .destinations_photo:first-child {
   margin-left: 0;
   background-image: url("../img/destinations/destinations_spain.png");
 }
+@media (max-width: 500px) {
+  .destinations_photo:first-child {
+    background-image: url("../img/mobile/destinations/destinations_spain.jpg");
+  }
+}
 .destinations_photo:last-child {
   background-image: url("../img/destinations/destinations_usa.png");
+}
+@media (max-width: 500px) {
+  .destinations_photo:last-child {
+    background-image: url("../img/mobile/destinations/destinations_usa.jpg");
+  }
 }
 @media (max-width: 500px) {
   .destinations_photo {
@@ -491,6 +513,11 @@ h3 {
 }
 .destinations > h2 {
   margin-bottom: 45px;
+}
+@media (max-width: 500px) {
+  .destinations > h2 {
+    margin-bottom: 20px;
+  }
 }
 
 .destinations__wrapper {
@@ -552,9 +579,63 @@ h3 {
 }
 
 .story__photo {
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 250px;
+  min-width: 400px;
   box-shadow: 0px 4px 4px #0D606F;
   border-radius: 16px;
   margin: 0 40px 30px 0;
+}
+@media (max-width: 500px) {
+  .story__photo {
+    min-height: 130px;
+    min-width: 155px;
+    margin: 0 10px 15px 0;
+  }
+}
+.story__photo-thai {
+  background-image: url("../img/stories/story_thai.png");
+}
+@media (max-width: 500px) {
+  .story__photo-thai {
+    background-image: url("../img/mobile/stories/story_thai.jpg");
+  }
+}
+.story__photo-utah {
+  background-image: url("../img/stories/story_utah.png");
+}
+@media (max-width: 500px) {
+  .story__photo-utah {
+    background-image: url("../img/mobile/stories/story_utah.jpg");
+  }
+}
+.story__photo-mountains {
+  background-image: url("../img/stories/story_mountains.png");
+}
+@media (max-width: 500px) {
+  .story__photo-mountains {
+    background-image: url("../img/mobile/stories/story_mountains.jpg");
+  }
+}
+.story__photo-journey {
+  background-image: url("../img/stories/story_journey.png");
+}
+@media (max-width: 500px) {
+  .story__photo-journey {
+    background-image: url("../img/mobile/stories/story_journey.jpg");
+  }
+}
+
+.story__text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 184px;
+}
+@media (max-width: 500px) {
+  .story__text {
+    max-height: 88px;
+  }
 }
 
 .story__link {
@@ -591,9 +672,14 @@ h3 {
 }
 
 .img_footer {
-  background-image: url("../img/mobile/backgrounds/footer_background_mob.jpg");
+  background-image: url("../img/backgrounds/footer_background.png");
   background-position: center bottom;
   background-size: auto 100%;
+}
+@media (max-width: 500px) {
+  .img_footer {
+    background-image: url("../img/mobile/backgrounds/footer_background.jpg");
+  }
 }
 
 .footer_invisible-span {

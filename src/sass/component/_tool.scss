@@ -17,14 +17,14 @@
   }
   &>p {
     color: $color-additional;
-    margin-top: 30px;
+    margin-top: 20px;
   }
   &:first-child {
     padding-left: 11px;
     @include media-mobile {
       padding: 0;
       > p {
-        text-align: left;
+        max-width: 70px;
       }
     }
   }
@@ -33,8 +33,10 @@
     padding-right: 12px;
     @include media-mobile {
       padding: 0;
+      align-items: flex-end;
       > p {
         text-align: right;
+        max-width: 72px;
       }
     }
   }

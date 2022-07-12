@@ -17,8 +17,11 @@
 .img_header {
   height: 765px;
   background-image: url("../img/backgrounds/header_background.png");
+  background-position: center top;
+  background-size: auto;
   @include media-mobile {
     height: 251px;
-    background-image: url("../img/mobile/backgrounds/header_background_mob.jpg");
+    background-image: url("../img/mobile/backgrounds/header_background.jpg");
+    background-size: 100%;
   }
 }

@@ -18,9 +18,12 @@
 }
 
 .img_footer {
-  background-image: url("../img/mobile/backgrounds/footer_background_mob.jpg");
+  background-image: url("../img/backgrounds/footer_background.png");
   background-position: center bottom;
   background-size: auto 100%;
+  @include media-mobile {
+    background-image: url("../img/mobile/backgrounds/footer_background.jpg");
+  }
 }
 
 .footer_invisible-span {

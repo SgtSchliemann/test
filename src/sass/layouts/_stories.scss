@@ -24,9 +24,52 @@
 }
 
 .story__photo {
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 250px;
+  min-width: 400px;
   box-shadow: (0px 4px 4px #0D606F);
   border-radius: 16px;
   margin: 0 40px 30px 0;
+  @include media-mobile {
+    min-height: 130px;
+    min-width: 155px;
+    margin: 0 10px 15px 0;
+  }
+  &-thai {
+    background-image: url("../img/stories/story_thai.png");
+    @include media-mobile {
+      background-image: url("../img/mobile/stories/story_thai.jpg");
+    }
+  }
+  &-utah {
+    background-image: url("../img/stories/story_utah.png");
+    @include media-mobile {
+      background-image: url("../img/mobile/stories/story_utah.jpg");
+    }
+  }
+  &-mountains {
+    background-image: url("../img/stories/story_mountains.png");
+    @include media-mobile {
+      background-image: url("../img/mobile/stories/story_mountains.jpg");
+    }
+  }
+  &-journey {
+    background-image: url("../img/stories/story_journey.png");
+    @include media-mobile {
+      background-image: url("../img/mobile/stories/story_journey.jpg");
+    }
+  }
+}
+.story__text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 184px;
+  @include media-mobile {
+    // width: 195px;
+    // height: 102px;
+    max-height: 88px;
+  }
 }
 
 .story__link {

@@ -7,12 +7,21 @@
     border-radius: 16px;
     margin-left: 60px; 
     background-image: url("../img/destinations/destinations_japan.png");
+    @include media-mobile{
+      background-image: url("../img/mobile/destinations/destinations_japan.jpg");
+    }
     &:first-child {
         margin-left: 0; 
         background-image: url("../img/destinations/destinations_spain.png");
+        @include media-mobile{
+          background-image: url("../img/mobile/destinations/destinations_spain.jpg");
+        }
     }
     &:last-child {
         background-image: url("../img/destinations/destinations_usa.png");
+        @include media-mobile{
+          background-image: url("../img/mobile/destinations/destinations_usa.jpg");
+        }
     }
     @include media-mobile {
       height: 210px;
@@ -35,6 +44,9 @@
   }
   > h2 {
     margin-bottom: 45px;
+    @include media-mobile {
+      margin-bottom: 20px;
+    }
   }
 }
 
