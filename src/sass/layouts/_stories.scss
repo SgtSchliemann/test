@@ -9,12 +9,15 @@
   flex-direction: column;
   justify-content:space-around;
   align-items: center;
+  @include media-mobile {
+    padding: 10px 0 0 0;
+  }
   > button {
     padding: 10px 35.5px;
-    margin-top: 9px;
-    margin-left: 4px;
+    margin: 9px 0 0 4px;
     @include media-mobile {
       padding: 7.5px 12px;
+      margin: 10px 0 13px 0;
     }
   }
 }
@@ -25,14 +28,14 @@
 
 .story__photo {
   background-repeat: no-repeat;
-  background-position: center;
-  min-height: 250px;
+  background-position: top;
+  height: 250px;
   min-width: 400px;
   box-shadow: (0px 4px 4px #0D606F);
   border-radius: 16px;
   margin: 0 40px 30px 0;
   @include media-mobile {
-    min-height: 130px;
+    height: 130px;
     min-width: 155px;
     margin: 0 10px 15px 0;
   }
@@ -62,13 +65,14 @@
   }
 }
 .story__text {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-height: 184px;
   @include media-mobile {
-    // width: 195px;
-    // height: 102px;
-    max-height: 88px;
+    display: none;
+  } 
+  &-mobile {
+    display: none;
+    @include media-mobile {
+        display: block;
+    }
   }
 }
 

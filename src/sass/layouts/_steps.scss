@@ -1,3 +1,6 @@
 .steps {
   margin-top: 80px;
+  @include media-mobile {
+    margin-top: 20px;
+  }
 }

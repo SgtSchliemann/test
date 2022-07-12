@@ -9,18 +9,21 @@
     background-image: url("../img/destinations/destinations_japan.png");
     @include media-mobile{
       background-image: url("../img/mobile/destinations/destinations_japan.jpg");
+      order: 0;
     }
     &:first-child {
         margin-left: 0; 
         background-image: url("../img/destinations/destinations_spain.png");
         @include media-mobile{
           background-image: url("../img/mobile/destinations/destinations_spain.jpg");
+          order: 1;
         }
     }
     &:last-child {
         background-image: url("../img/destinations/destinations_usa.png");
         @include media-mobile{
           background-image: url("../img/mobile/destinations/destinations_usa.jpg");
+          order: 2;
         }
     }
     @include media-mobile {
@@ -36,11 +39,20 @@
     display: flex;
     align-items: flex-end;
     margin: 0 0 40px 15px;
+    @include media-mobile {
+      @include font($size: 2.0rem, $height: 2.646rem, $weight: 500);
+      align-items: flex-start;
+      margin: 8px 0 0 15px;
+    }
   }
   &>button {
     margin: auto;
     margin-top: 40px;
     margin-bottom: 122px;
+    @include media-mobile {
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
   }
   > h2 {
     margin-bottom: 45px;
@@ -65,15 +77,30 @@
 .dot {
   height: 20px;
   width: 20px;
-  border-radius: 10px;
+  border-radius: 100%;
   background-color: $color-primary;
-  margin-top: 24px;
-  margin-left: 10px;
+  margin: 24px 0 0 10px;
+  @include media-mobile {
+    height: 8px;
+    width: 8px;
+    border-radius: 100%;
+    margin: -20px 0 0 6px;
+    order: 0;
+  }
   &_transparent {
     background-color: $color-primary-transparent;
   }
   &:first-child {
     margin-left: 0;
+    @include media-mobile {
+      margin-left: 6px;
+      order: 1;
+    }
+  }
+  &:last-child {
+    @include media-mobile {
+      order: 2;
+    }
   }
   &:hover {
     cursor: pointer;
